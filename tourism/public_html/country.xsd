@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.richard.com/tourism"
+           xmlns="https://www.richard.com/tourism"     
+           elementFormDefault="qualified">
+    
+    <xs:element name="country">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="beaches"></xs:element>
+                <xs:element ref="hotels"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="beaches">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="beach" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="hotels">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="hotel" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="beach">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="top"></xs:element>
+                <xs:element ref="name"></xs:element>
+                <xs:element ref="location"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="hotel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"></xs:element>
+                <xs:element ref="place"></xs:element>
+                <xs:element ref="price"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+     
+    <xs:element name="top" type="position"></xs:element>
+    <xs:element name="name" type="nameBeachHotel"></xs:element>
+    <xs:element name="location" type="somewhere"></xs:element>
+    <xs:element name="place" type="somewhere"></xs:element>
+    <xs:element name="price" type="money"></xs:element>
+    
+    <xs:simpleType name="position">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="nameBeachHotel">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-z][a-z].+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="somewhere">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-z][a-z].+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="money">
+        <xs:restriction base="xs:decimal">
+            <xs:pattern value="[0-9]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+         
+</xs:schema>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<country xmlns="https://www.richard.com/tourism"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://www.richard.com/tourism country.xsd">
+    <beaches>
+        <beach>
+            <top>1</top>
+            <name>Playa Los Frailes</name>
+            <location>Manabi</location>   
+        </beach>
+        <beach>
+            <top>2</top>
+            <name>Playa de Canoa</name>
+            <location>Manabi</location>  
+        </beach>
+        <beach>
+            <top>3</top>
+            <name>Playa de Atacames</name>
+            <location>Esmeraldas</location>
+        </beach>   
+    </beaches>
+    <hotels>
+        <hotel>
+            <name>Nu House Boutique Hotel</name>
+            <place>Quito</place>
+            <price>100</price>
+        </hotel>
+        <hotel>
+            <name>Hotel Continental</name>
+            <place>Guayaquil</place>
+            <price>131</price>
+        </hotel>
+        
+        <hotel>
+            <name>Hotel El Dorado</name>
+            <place>Cuenca</place>
+            <price>90</price>
+        </hotel> 
+    </hotels>
+</country>

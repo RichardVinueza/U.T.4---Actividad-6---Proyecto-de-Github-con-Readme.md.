@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<country xmlns="https://www.richard.com/tourism"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://www.richard.com/tourism country.xsd">
+    <beaches>
+        <beach>
+            <top>1</top>
+            <name>Macarella</name>
+            <location>Balearic Islands</location>   
+        </beach>
+        <beach>
+            <top>2</top>
+            <name>Playa de Benijo</name>
+            <location>Canary Islands</location>  
+        </beach>
+        <beach>
+            <top>3</top>
+            <name>Playa los Genoveses</name>
+            <location>Andalucia</location>
+        </beach>   
+    </beaches>
+    <hotels>
+        <hotel>
+            <name>Hotel Alfonso XIII</name>
+            <place>Sevilla</place>
+            <price>2000</price>
+        </hotel>
+        <hotel>
+            <name>Finca Cortesin</name>
+            <place>Malaga</place>
+            <price>700</price>
+        </hotel>
+        
+        <hotel>
+            <name>El Palace</name>
+            <place>Barcelona</place>
+            <price>1000</price>
+        </hotel> 
+    </hotels>
+</country>
